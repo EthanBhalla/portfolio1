@@ -1,0 +1,164 @@
+<!--The following code is created by Ethan Bhalla(Student Number: 
+  251-279-927 for the purposes of the SE2202 Course at Western University with structure from the w3 schools platform, 
+  however many edits to the look of the website are present at the same time.)-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--Creation of the heading section of the website-->
+    <head>
+      <!--This code changes the url title to the name of my portfolio webpage-->
+        <title>Ethan Bhalla's Portfolio</title>
+        
+        <!--Allows for ASCII to be encoded within a single bite, along with basic characters within the webpage, making the webpage memory efficient-->
+        <meta charset="UTF-8">
+
+        <!--The following code makes the webpage be able to be viewed on any device.-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!--making the stylesheet template the provided css file within the folder submitted for the tutorial-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <style>    </style>
+    </head>
+
+    <body>
+
+        <!--Creation of the heading text to be reffered to, the hashtags before each name makes them hotlinks to each id of the following links-->
+        <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#contact">Contact Me</a>
+        
+                
+        </div>
+
+        <!--Creation of a Hero Image including a photo, main text, and a button-->
+        <div class="hero-image">
+          <!--The id makes this page a hotlink, therefore the hero page ccomes up when the user presses home-->
+            <div id = 'home' ></div>
+            <div class="hero-text">
+
+              <!--Creates a heading saying my name along with my engineering major in a paragraph format-->
+            <h1>Ethan Bhalla</h1>
+            <p>Software Engineer</p>
+
+              <!--Creation of a non-working button that says to view my CV but no action is reuired as per the guidelines-->
+            <button style="font-family: Arial, Helvetica, sans-serif;">View my CV</button>
+            </div>
+        </div>
+
+        <!--Creation of the About me section, which includes a hotlinked id from the navigation bar on the header-->
+        <div id="about"></div>
+        <div class="about-section">
+
+            <!--About me section header uses a different font type, Verdana, and an extra-large font size-->
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><u style="font-size: x-large;">About Me</u></h1>
+            
+            
+            <!--About me font type is also verdana fonted, but is medium sized instead. Creation of about me paragraph text is done below-->
+            <p style="font-size: medium; font-family: Verdana, Geneva, Tahoma, sans-serif"><b>I'm</b> currently a Second-year Software Engineering Student studying at Western University. As a former International Baccalaureate graduate and competitive soccer player, I have gained strong leadership skills that allow me to work well within any sort of team. </br>
+
+            </br></br> <b>These</b> skills were evident at my previous job at Cargo Airport Systems. At this job, I had to work alongside the warehouse team to ensure the transfer of goods was processed correctly and adhered to the law. Through this, I directly worked with customers to ensure all paperwork was completed with quality, and that shipment of goods was done so with the utmost quality. 
+                
+            </br></br><b>As</b> a person, I enjoy listening to the dilemmas that other people face and trying to assist in solving them as well. My volunteer experience for the non-profit organization Fund Homecare, and the Law Organization Mississauga Community Legal Services show this compassion, as both organizations aim to help the less fortunate for no personal gain. 
+                
+            </br></br><b>At Fund Homecare</b>, I was part of the promotional committee, overseeing the creation of events held by the organization as well as setting up the software to run such events.
+                
+            </br></br><b>I</b> strive to keep learning in any aspect possible and would love to chat about these aspirations with anyone who is interested. As a dedicated and curious individual, I love undergoing new challenges and seeing them all the way through. </p>
+            
+          </div>
+          
+
+          <!--The following code refers to the experience section, with an id hotlink to refer those who press experience on the Navigation bar to this section-->
+          <div id="experience"></div>
+          <h2 style="text-align:center">Work Experience</h2>
+          <div class="work experience">
+            
+
+            <!--The following code uses a card system to create a work experience page in which my work experience for a company is being displayed-->
+            <div class="column">
+              <div class="card">
+
+                <!--The following image is a jpeg file from a folder adjacent to the index html file-->
+                <img src="images/planeCargo.jpg" alt="Plane" style="width:100%">
+                <div class="container">
+
+                  <!--Following code has the text for the first card-->
+                  <h2>Cargo Technician</h2>
+                  <p class="title">Cargo Airport Services</p>
+                  <p>I spent the last two summers at Cargo Airport Canada working as a Cargo Technician.</p>
+                  </div>
+              </div>
+            </div>
+
+          <!--The following code uses a card system to create a work experience page in which my work experience for a company is being displayed-->
+            <div class="column">
+              <div class="card">
+
+                <!--The following image is a jpeg file from a folder adjacent to the index html file-->
+                <img src="images/fundhomecare.jpg" alt="Fund Homecare" style="width:100%">
+                <div class="container">
+
+                  <!--Following code has the text for the second card-->
+                  <h2>Fund Homecare</h2>
+                  <p class="title">Assitant Website Developer Event Coordinator</p>
+                  <p>I helped startup the Non-profit Organization's website and assisted in event coordination in the Organization's early days.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <!--Creation of the Contact Me Section-->
+          
+            <div class="contactMe">
+
+                <!--Displays text for the contact me section-->
+                <div style="text-align:center">
+                  <h2>Contact Me</h2>
+                  <p>For any inquires, or to learn more about me submit a message below:</p>
+                </div>
+
+
+                <div class="row">
+                  <div class="column">
+
+                    <!--Displays an image to go along with the contact me section so that the page doesn't look blank-->
+                    <img src="images/backgroundimage.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+
+                    <!--Creates a form where the user interacting with the page can type in information
+                      relating to each specific part in text, and a placeholder is put which disappears when the user starts typing-->
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="email">Email Address</label>
+                      <input type="text" id="email" name="emailAddress" placeholder="Email Address @...">
+                      
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                      <input type="submit" value="Submit">
+                      <div id="contact"></div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+
+              
+               <!--Creation of the footer stating the user's portfolio is what the website is--> 
+            <div class="footer">
+                <p>Ethan Bhalla's Portfolio</p>
+            </div>
+        
+
+
+
+    </body>
+</html>
